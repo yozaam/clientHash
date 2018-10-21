@@ -1,0 +1,3 @@
+# clientHash
+## A WebAssembly/Javascript method to Hash a users password on the frontend
+### Web Apps hash the password server side which means that most of the time the raw password is sent over HTTPS or HTTP ideally this is fine but there exists a slight vulnerability if the data is read client side instead, this project aims to hash the password when the form is filled and send over the hashed password to the server this also means that the real password never comes in the hands of the organisation who runs the webstie, Our aim for this project is to hash the password using Javascript and if WebAssembly results in a faster hashing of the password then implement a solution using WebAssembly. 
